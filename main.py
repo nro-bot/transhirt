@@ -27,11 +27,6 @@ def setup_trans():
     )
     argostranslate.package.install_from_path(package_to_install.download())
 
-# Translate
-#translatedText = argostranslate.translate.translate(
-    #"Hello World", from_code, to_code)
-#print(translatedText)
-
 def transl(phrase):
    return argostranslate.translate.translate(phrase, from_code, to_code)
 
@@ -41,7 +36,6 @@ def setup_transcribe():
     #SetLogLevel(0)
 
 if __name__ == '__main__': 
-    #!/usr/bin/env python3
     setup_trans()
     setup_transcribe()
     '''
